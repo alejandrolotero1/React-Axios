@@ -10,6 +10,7 @@ function Inicio() {
   /*---------------------------UserName-----------------------------*/
   const [userNameData, setUserNameData] = useState(' ')
   const [emailData, setEmailData] = useState(' ')
+  const [apiRoute, setApiRoute] = ('https://backend-edw.herokuapp.com/usuario')
 
   const [infoSendApi, setInfoSendApi] = useState(false)
   const[messageUser, setMessageUser] = useState("")
@@ -103,35 +104,49 @@ const changePasswordBtn = () => {
     })
     .catch(console.error('Error'))
   }
+
+
+
   return (
-    <main>
+    <main className='contentBackground'>
     <CampoName />
     <section className='contentMain'>
-        <div className='contentForm'>
-            <div className='contentTitleForm'>
-              <h2 className='titleForm'>Registrate</h2>
-            </div>
-            <div className='contentInputs'>
-                <div className='contentInputsData'>
-                  <input type="text" placeholder='Nombre de usuario' className='inputs' onBlur={CaptureUserName}/>
-                  <p className='textNameValidate'>{messageUser}</p>
-                  <input type="text" placeholder='Ingresa tu email' className='inputs' onBlur={CaptureUserEmail}/>
-                  <p className='textEmailValidate'>{messageEmail}</p>
-                </div>
-                <div className='contentInputsData'>
-                  <div className='contentPasswordBtn'>
-                    <input type={changePassword} placeholder='Contraseña' onChange={CapturePassword} className='inputPassword'/>
-                    <button className='btnEye' onClick={changePasswordBtn}><AiFillEye /></button>
-                  </div>
-                  <p className='textPasswordValidate'></p>
-                  <input type={changePassword} placeholder="Valide contraseña" className='inputs' onChange={CapturePasswordV}/>
-                  
-                  <p className='textValidate'>{textValidate}</p>
-               </div>
-              <button className='btnRegister' onClick={sendApi}>Registrarme</button>
-            </div>
+      <div className='containerForm'>
+          <div className="elements">
+            <button><a href="/">Registrarme</a></button>
+            <button><a href="/">Iniciar Sesion</a></button>
+          </div>
+        <div className='contentInputsData'>
+        <div className='contentTitleForm'>
+          <h2 className='titleForm'>Registrate</h2>
         </div>
-    </section>
+        <div className='contentForm'>
+          <div className='ContentData'>
+            <div className='data'>
+              <input type="text" placeholder='Nombre de usuario' className='inputs' onBlur={CaptureUserName}/>
+              <p className='textNameValidate'>{messageUser}</p>
+            </div>
+            <div className='data'>
+              <input type="text" placeholder='Ingresa tu email' className='inputs' onBlur={CaptureUserEmail}/>
+              <p className='textEmailValidate'>{messageEmail}</p>
+            </div>
+          </div>
+        <div className='ContentData'>
+          <div className='data'>
+              <input type={changePassword} placeholder='Contraseña' onChange={CapturePassword} className='inputs'/>
+              <button className='btnEye' onClick={changePasswordBtn}><AiFillEye /></button>
+          </div>
+          <div className='data'>
+              <p className='textPasswordValidate'></p>
+              <input type={changePassword} placeholder="Valide contraseña" className='inputs' onChange={CapturePasswordV}/>
+              <p className='textValidate'>{textValidate}</p>
+          </div>
+        </div>  
+          <button className='btnRegister' onClick={sendApi}>Registrarme</button>
+        </div>
+        </div>
+        </div>
+      </section>
     </main>
   )
 }

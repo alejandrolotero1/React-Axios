@@ -55,27 +55,140 @@ h2 {
   margin: 0;
 }
 
+.contentBackground{
+  background-image: url(./Images/fondo1.jpg) ;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment:fixed ;
+  height: 100vh
+}
+
 
 .nav{
+  background: linear-gradient(#322b79,#594fc400);
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   width: 100%;
   height: 75px;
-  background-color: #1e2124;
-  color: #fff;
-  border-bottom: solid #7289da;
+  color: rgb(255, 255, 255);
   border-width: 5px;
+  font-family: Vegur, 'PT Sans', Verdana, sans-serif;
+  
 }
 
 .contentMain{
   width: 100%;
   display: flex;
-  justify-content: center;
-  margin-top: 150px;
+  flex-direction: column;
+  align-items: center;
+  height: 600px;
 }
 
+.ul{
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  margin-right: 20px;
+}
+
+.tituloNav{
+  margin-left: 20px ;
+  display: flex;
+  align-items: center;
+}
+
+.IconNav{
+  font-size: 30px;
+}
+
+.containerForm{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+}
+
+.contentInputsData{
+
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 60%;
+  background: rgba(48, 48, 49, 0.385);
+  border-style: solid;
+  border-width: 1px;
+}
+
+
+.elements{
+  margin-top: 130px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.elements button{
+  background-color: #322b79;
+  border-style:none ;
+}
+
+.elements a{
+  text-decoration: none;
+  color: #fff;
+  font-family: Vegur, 'PT Sans', Verdana, sans-serif;
+}
+
+
+
 .contentForm{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.ContentData{
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.data{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.inputs{
+  border-style:none ;
+  border-bottom: solid #322b79;
+  background: rgba(34, 34, 35, 0.364);
+
+  width: 80%;
+  height: 25px;
+}
+
+.btnEye{
+  background-color: rgba(0, 0, 0, 0);
+  font-size: 18px;
+  height: 25px;
+  border-style: none;
+}
+
+.contentTitleForm{
+  font-family: Vegur, 'PT Sans', Verdana, sans-serif;
+  color: #fff;
+}
+
+/* .contentForm{
   width: 35%;
   display: flex;
   flex-direction: column;
@@ -112,7 +225,7 @@ h2 {
   width: 70%;
   height: 25px;
 }
-/*---Validar Password--*/
+
 .contentPasswordBtn{
   width: 100%;
   height: 25px;
@@ -126,15 +239,13 @@ h2 {
 }
 
 .btnEye{
-  /* font-size: 15px;
+  font-size: 15px;
   border-style: none;
   background-color: #fff;
-  position: absolute; */
+  position: absolute; 
   position: absolute;
   right: 1rem;
 
-}
-/*--------------------*/
 
 
 .btnRegister{
@@ -176,4 +287,6 @@ h2 {
 
 .timeText{
   color:#fff;
-}
+} 
+
+*/
