@@ -1,0 +1,179 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Carter+One&family=Dancing+Script&family=Indie+Flower&family=Lobster&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #080808;
+}
+
+h1 {
+  font-family: 'Lobster', cursive;
+  color: #ff4500;
+  font-size: 3rem;
+  text-shadow: -5px 0 0 #5e5e64;
+}
+
+h2 {
+  font-family: 'Dancing Script', cursive;
+  color: #f0cabc;
+  font-size: 3rem;
+  text-shadow: -5px 0 0 #5e5e64;
+}
+
+.yourName{
+  color: #fff;
+}
+
+.App{
+  display: flex;
+  justify-content: center;
+  width: 80%;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.class1{
+  font-size:  90px;
+}
+
+.class2{
+  font-size: 10px;
+<<<<<<< HEAD
+} */
+
+
+*{
+  margin: 0;
+}
+
+
+.nav{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 75px;
+  background-color: #1e2124;
+  color: #fff;
+  border-bottom: solid #7289da;
+  border-width: 5px;
+}
+
+.contentMain{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 150px;
+}
+
+.contentForm{
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-style: solid;
+  border-radius: 0px 0 20px 20px;
+}
+
+.contentTitleForm{
+  background-color: #1e2124;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 55px;
+}
+
+.contentInputs{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 0 20px 0;
+  width: 100%;
+  gap: 20px;
+}
+
+.titleForm{
+  color: #fff;
+  font-size: 25px;
+}
+
+.inputs{
+  width: 70%;
+  height: 25px;
+}
+/*---Validar Password--*/
+.contentPasswordBtn{
+  width: 100%;
+  height: 25px;
+  display: flex;
+  justify-content: center;
+}
+
+.inputPassword{
+  width: 70%;
+  height: 100%;
+}
+
+.btnEye{
+  /* font-size: 15px;
+  border-style: none;
+  background-color: #fff;
+  position: absolute; */
+  position: absolute;
+  right: 1rem;
+
+}
+/*--------------------*/
+
+
+.btnRegister{
+  width: 70%;
+  height: 35px;
+  background-color: #1e2124;
+  color: #fff;
+}
+
+.btnRegister:hover{
+  font-weight: 100;
+  border-style: none;
+  border-bottom: solid #7289da;
+  border-width: 5px;
+}
+
+.contentInputsData{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+
+.reactExercise{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  border-style: solid;
+  border-color: #ff4500;
+}
+
+.timeNow{
+  color: #ffffff;
+}
+
+.timeText{
+  color:#fff;
+}
